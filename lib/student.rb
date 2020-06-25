@@ -28,8 +28,8 @@ class Student
       WHERE grade < 12
     SQL
 
-    DB[:conn].execute(sql)
-    Student.all.each do {|student|}
+    students_below_12DB[:conn].execute(sql)
+    Student.all.each do {|student|} student.name == 
 
   end
 

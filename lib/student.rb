@@ -18,7 +18,11 @@ class Student
   end
 
   def self.all
-    @@all
+    sql = <<-SQL
+      SELECT *
+      FROM students
+      WHERE grade < 12
+    SQL
   end
 
   def self.students_below_12th_grade

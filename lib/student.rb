@@ -3,8 +3,8 @@ class Student
 
   def self.new_from_db(row)
     new_i = row[0]
-    new_name =
-    new_grade =
+    new_name = row[1]
+    new_grade = row[2]
   end
 
   def self.all

@@ -6,6 +6,7 @@ class Student
     new_name = row[1]
     new_grade = row[2]
     new_student = Student.new(new_id, new_name, new_grade)
+    new_student
   end
 
   def self.all

@@ -23,6 +23,7 @@ class Student
       FROM students
     SQL
     row = DB[:conn].execute(sql)
+    binding.pry
   end
 
   def self.students_below_12th_grade

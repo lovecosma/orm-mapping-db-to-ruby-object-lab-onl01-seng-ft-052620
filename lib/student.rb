@@ -16,7 +16,7 @@ class Student
     new_student.grade = new_grade
     new_student
   end
-
+s
   def self.all
     @@all
   end

@@ -28,8 +28,7 @@ class Student
       WHERE grade < 12
     SQL
 
-    students_below_12 = DB[:conn].execute(sql).flatten
-    Student.all.each {|student| return student if student.name == students_below_12}
+    DB[:conn].execute(sql).flatten
 
   end
 

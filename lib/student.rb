@@ -22,7 +22,7 @@ class Student
       SELECT *
       FROM students
     SQL
-    row = DB[:conn].execute(sql)
+    table = DB[:conn].execute(sql)
     binding.pry
   end
 

@@ -13,6 +13,7 @@ class Student
   end
 
   def self.all?
+    @@all
   end 
 
   def self.students_below_12th_grade

@@ -21,7 +21,7 @@ class Student
     sql = <<-SQL
       SELECT students.name
       FROM students
-      WHERE students.name = 
+      WHERE students.name = name
       VALUES (?, ?)
     SQL
   end

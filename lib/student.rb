@@ -1,6 +1,10 @@
 class Student
   attr_accessor :id, :name, :grade
   @@all = []
+
+  def initialize
+  end 
+
   def self.new_from_db(row)
     new_id = row[0]
     new_name = row[1]

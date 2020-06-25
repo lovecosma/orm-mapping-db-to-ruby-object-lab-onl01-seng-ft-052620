@@ -19,7 +19,7 @@ class Student
 
   def self.find_by_name(name)
     sql = <<-SQL
-      INSERT INTO students (name, grade)
+      SELECT INTO students (name, grade)
       VALUES (?, ?)
     SQL
   end

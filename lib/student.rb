@@ -19,7 +19,9 @@ class Student
 
   def self.find_by_name(name)
     sql = <<-SQL
-      SELECT INTO students (name, grade)
+      SELECT students.name
+      FROM students
+      WHERE students.name = 
       VALUES (?, ?)
     SQL
   end

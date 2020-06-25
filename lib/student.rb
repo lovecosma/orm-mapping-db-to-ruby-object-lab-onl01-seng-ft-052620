@@ -19,10 +19,10 @@ class Student
 
   def self.find_by_name(name)
     sql = <<-SQL
-      SELECT students.id
-      FROM students
-      WHERE students.name = name
-      VALUES (?, ?)
+      SELECT *
+      FROM songs
+      WHERE name = ?
+      LIMIT 1
     SQL
   end
 

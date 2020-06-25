@@ -28,7 +28,8 @@ class Student
       WHERE grade < 12
     SQL
 
-    DB[:conn].execute(sql)
+    row = DB[:conn].execute(sql)
+    student_name_from_db =
 
   end
 

@@ -29,7 +29,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql)
-    Student.all
+    Student.all.each do {|student|}
 
   end
 

@@ -29,7 +29,8 @@ class Student
     SQL
 
     row = DB[:conn].execute(sql)
-    new_student = Student.new 
+    new_student = Student.new
+    new_student.name = row[1]
 
   end
 

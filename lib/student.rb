@@ -21,7 +21,6 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      
     SQL
   end
 

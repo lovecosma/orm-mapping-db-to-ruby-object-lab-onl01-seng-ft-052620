@@ -18,7 +18,11 @@ class Student
   end
 
   def self.all
-  @@all
+    sql = <<-SQL
+      SELECT *
+      FROM students
+    SQL
+    row = DB[:conn].execute(sql)
   end
 
   def self.students_below_12th_grade

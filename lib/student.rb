@@ -29,7 +29,7 @@ class Student
     SQL
 
     students_below_12 = DB[:conn].execute(sql).flatten
-    Student.all.each do {|student|} student.name == students_below_12
+    Student.all.each do {|student| return student if student.name == students_below_12)
 
   end
 

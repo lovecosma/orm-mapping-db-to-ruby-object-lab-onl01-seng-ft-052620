@@ -22,6 +22,7 @@ class Student
       SELECT *
       FROM students
     SQL
+    row = DB[:conn].execute(sql)
   end
 
   def self.students_below_12th_grade

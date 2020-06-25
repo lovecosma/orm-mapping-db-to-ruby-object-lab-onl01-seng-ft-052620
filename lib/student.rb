@@ -29,7 +29,7 @@ class Student
     SQL
 
     row = DB[:conn].execute(sql)
-    
+    new_student
 
   end
 

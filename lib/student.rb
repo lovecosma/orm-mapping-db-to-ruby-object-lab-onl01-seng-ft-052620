@@ -9,6 +9,7 @@ class Student
     new_student.id = new_id
     new_student.name = new_name
     new_student.grade = new_grade
+    new_student
   end
 
   def self.all

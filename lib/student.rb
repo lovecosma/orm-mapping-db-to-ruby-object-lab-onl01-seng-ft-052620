@@ -3,7 +3,8 @@ class Student
   @@all = []
 
   def initialize
-  end 
+    
+  end
 
   def self.new_from_db(row)
     new_id = row[0]

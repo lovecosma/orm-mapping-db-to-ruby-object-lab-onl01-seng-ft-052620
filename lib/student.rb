@@ -3,7 +3,7 @@ class Student
   @@all = []
 
   def initialize
-    @@all << elf
+    @@all << self
   end
 
   def self.new_from_db(row)
